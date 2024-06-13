@@ -18,6 +18,7 @@ jobs:
   hoge2:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    if: github.event.pull_request.head.repo.full_name == 'hoge/hoge'
     
     steps:
       - name: Print
