@@ -1,0 +1,24 @@
+name: Example pull request
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  hoge1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: Print
+        run: echo "hoge1"
+  
+  hoge2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: Print
+        run: echo "hoge2"
